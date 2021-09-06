@@ -1,4 +1,4 @@
-<html lang="pt-Br">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,9 +58,23 @@
           </div>
 
       </div>
+      <!--formulario-->
+      <div class="formulario">
+          <h1>Contato</h1>
+          <form name="formcontato" action="salvar_mensagem.php" method="POST">
+              Nome:<input type="text" name="nome" ><br><br>
+              Email:<input type="email" name="email" ><br><br>
+              Assunto:<input type="assunto" name="assunto"><br><br>
+              Mensagem:<textarea name="mensagem"></textarea><br><br>
+
+              <input class="submit" type="submit" onclick="return validar()">
+
+          </form>
+
+      </div>
 
   
     
-    
+   <script src="prompt.js"></script> 
 </body>
 </html>
